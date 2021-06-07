@@ -12,6 +12,18 @@ Link to Dataset: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/
 * Data Cleaning
 * Data Visualization
 
+## ETL
+``movie_cleaning.ipynb`` was used to complete ETL on ``IMDB_movies.csv`` and ``IMDB_ratings.csv`` to generate ``imdb_final.csv``. This final CSV is the basis for the data used in machine learning. These files are saved in ``Resources``.
+
+## Preprocessing 
+The data from ``imdb_final.csv`` needed to be preprocessed. First, the number of classes was identified for each set of categorical data, then that data was reformmated, label-encoded, and one-hot encoded to be used for the machine learning. 
+
+## Scaling
+The data may need to be scaled.
+
+## Multiple Linear Regression
+Multiple linear regression is the use of more than one feature variable to model a linear relationship between a single dependent variable (median rating) and independent variables. 
+
 ### Technologies
 * Python
 * Pandas
