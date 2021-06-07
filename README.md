@@ -1,6 +1,6 @@
 # IMBD-Machnine-Learning: Final Project for 2022 University of Minnesota Data Analytics Bootcamp
 
-Final Project for 2010 University of Minnesota  Data Analytics Bootcamp IMDb Machine Learning by Jon, Mallory, Habibe and Jag. This project focused on designing models to predict IMDB movie ratings based on genre, year of release, budget, duration, and director.
+Final Project for 2010 University of Minnesota  Data Analytics Bootcamp IMDb Machine Learning by Jon, Mallory, Habibe and Jag. This project is focused on designing models to predict IMDB movie ratings based on genre, year of release, budget, duration, and director.
 
 ## Method and Detail
 
