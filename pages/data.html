@@ -17,38 +17,53 @@
 <body>
     <!-- Nav Bar Start-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
-        <a class="navbar-brand" href="https://jagnoor.github.io/IMBD-Machnine-Learning/">Home</a>
+      <a class="navbar-brand" href="https://jagnoor.github.io/IMBD-Machnine-Learning/">Home</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-             <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Project Findings
-              </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown btn-group">
+           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Project Findings
+            </a>
 
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression">Regression Findings</a>
-                <a class="dropdown-item" href="">Page 2</a>
-                <a class="dropdown-item" href="">Page 3</a>
-                <a class="dropdown-item" href="">Page 4</a>
-                <a class="dropdown-item" href="">Page 5</a>
-                <a class="dropdown-item" href="">Page 6</a>
-              </div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression">Regression Findings</a>
+              <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/svm">SVM Findings</a>
+              <a class="dropdown-item" href="">Page 3</a>
+              <a class="dropdown-item" href="">Page 4</a>
+              <a class="dropdown-item" href="">Page 5</a>
+              <a class="dropdown-item" href="">Page 6</a>
+            </div>
 
-              <li class="nav-item">
-                <a class="nav-link" href="">Comparison</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/data">Data</a>
-              </li>
-          </ul>
-        </div>
-    </nav>
-  <!-- Nav Bar End -->
+            <li class="nav-item">
+              <a class="nav-link" href="">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/data">Data</a>
+            </li>
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Data Visualizations
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="">Cool Visualization 1</a>
+                  <a class="dropdown-item" href="">Cool Visualization 2</a>
+                  <a class="dropdown-item" href="">Cool Visualization 3</a>
+                  <a class="dropdown-item" href="">Cool Visualization 4</a>
+                  <a class="dropdown-item" href="">Cool Visualization 5</a>
+                  <a class="dropdown-item" href="">Cool Visualization 6</a>
+                </div> 
+              </div>  
+            </li>  
+        </ul>
+      </div>
+  </nav>
+<!-- Nav Bar End -->
 
  
       <div class="col-xs-12">
@@ -61,20 +76,20 @@
                   <ul class="list-group" id="filters">
                     <div class="col-xs-3">
                       <li class="filter list-group-item" id="formOne">
-                        <label for="date">Filter 1</label>
-                        <input class="form-control" id="first-filter" type="text" placeholder="Something Here" onchange="tableChanged(this.value)">
+                        <label for="date">Year</label>
+                        <input class="form-control" id="first-filter" type="text" placeholder="Enter Year" onchange="filter1Change(this.value)">
                       </li>
                     </div>
                     <div class="col-xs-3">
                       <li class="filter list-group-item">
-                        <label for="date">Filter 2</label>
-                        <input class="form-control" id="second-filter" type="text" placeholder="Something Else Here" onchange="countryChanged(this.value)">
+                        <label for="date">Genre</label>
+                        <input class="form-control" id="second-filter" type="text" placeholder="Enter Genre" onchange="filter2Change(this.value)">
                       </li>
                     </div>
                     <div class="col-xs-3">
                       <li class="filter list-group-item">
-                        <label for="date">Filter 3</label>
-                        <input class="form-control" id="third-filter" type="text" placeholder="Here Too" onchange="rankChanged(this.value)">
+                        <label for="date">Director</label>
+                        <input class="form-control" id="third-filter" type="text" placeholder="Enter Director" onchange="filter3Change(this.value)">
                       </li>
                     </div>
                   </ul>
