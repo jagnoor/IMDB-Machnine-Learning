@@ -75,3 +75,17 @@ label {
 .form-control {
     background-color:rgb(243, 206, 19);
 }
+
+#SVM1 {
+    margin-top: 0%;
+    margin-bottom: 3%;
+    width: 80%;
+    height: 80%;
+}
+
+#SVM2 {
+    margin-top: 0%;
+    margin-bottom: 3%;
+    width: 30%;
+    height: 30%;
+}
