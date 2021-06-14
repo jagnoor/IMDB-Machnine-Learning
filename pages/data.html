@@ -77,27 +77,19 @@
                     <div class="col-xs-3">
                       <li class="filter list-group-item" id="formOne">
                         <label for="date">Year</label>
-                        <input class="form-control" id="first-filter" type="text" placeholder="Enter Year" onchange="filter1Change(this.value)">
-                      </li>
-                    </div>
-                    <div class="col-xs-3">
-                      <li class="filter list-group-item">
-                        <label for="date">Genre</label>
-                        <input class="form-control" id="second-filter" type="text" placeholder="Enter Genre" onchange="filter2Change(this.value)">
-                      </li>
-                    </div>
-                    <div class="col-xs-3">
-                      <li class="filter list-group-item">
-                        <label for="date">Director</label>
-                        <input class="form-control" id="third-filter" type="text" placeholder="Enter Director" onchange="filter3Change(this.value)">
+                        <input class="form-control" id="date" type="text" placeholder="Enter Year between 2000-2019">
+                        <label for="genre">Genre</label>
+                        <input class="form-control" id="genre" type="text" placeholder="Enter Genre">
+                        <label for="director">Director</label>
+                        <input class="form-control" id="director" type="text" placeholder="Enter Director">
                       </li>
                     </div>
                   </ul>
                 </div>
                 <div class="col-sm-2">
+                  <button id="filter-btn" type="button" class="btn btn-secondary btn-sm">Filter Table</button>
                   <button type="button" class="btn btn-secondary btn-sm" onclick="location.reload()"><span>Reset</span></button>
                 </div>
-                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
               </form>
             </div>
           </div>
