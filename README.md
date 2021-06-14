@@ -9,33 +9,29 @@ Final Project for 2010 University of Minnesota  Data Analytics Bootcamp IMDb Mac
 Link to Dataset: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/
 
 ### Methods Used
-* Data Cleaning
-* Data Visualization
+* Data Cleaning using python in a jupyter notebook 
+* Data Visualization using Tableau
+* Machine learning models using python and jupyter notebooks: multiple linear regression, deep learning, random forest, and support-vector machines.
 
 ## ETL
 ``movie_cleaning.ipynb`` was used to complete ETL on ``IMDB_movies.csv`` and ``IMDB_ratings.csv`` to generate ``imdb_final.csv``. This final CSV is the basis for the data used in machine learning. These files are saved in ``Resources``.
 
-## Preprocessing 
-The data from ``imdb_final.csv`` needed to be preprocessed. First, the number of classes was identified for each set of categorical data, then that data was reformmated, label-encoded, and one-hot encoded to be used for the machine learning. 
+## Data Visualization
+Tableau was used to explore and visualize the data. 
 
-## Scaling
-The data may need to be scaled.
+## Machine Learning
 
-## Multiple Linear Regression
-Multiple linear regression is the use of more than one feature variable to model a linear relationship between a single dependent variable (median rating) and independent variables. 
+### Preprocessing and scaling
+The data from ``imdb_final.csv`` needed to be preprocessed. First, the categorical columns genre and director were dummy encoded using pandas. Then, that data was reformmated using using label encoder from sklearn.preprocessing,scaled using standard scaler from sklearn.preprocessing, and then to categorical using tensorflow.keras.utils.
 
-### Technologies
-* Python
-* Pandas
-* Jupyter
-* Javascript
-* D3
-* HTML
-* CSS
-* Machine Learning Models: 
-  - ML Models (Predict RATING (Good, Bad, etc) based on release year, budget, genre, director, duration etc.. 
-  - Deep Learning
-  - Regression (Multiple)
-  - Random Forest (predict the profit of the movie)
-* DataTables
-* PostgreSQL
+### Multiple Linear Regression
+Multiple linear regression is not a feasible model for this data. It was attempted in the file: ``multiple_linear_regression.ipynb``
+
+### Deep Learning
+Deep learning is a model that can predict the rating of a movie. It was completed in: ``deep_learning.ipynb``
+
+### Random Forest
+Random forest is a model that can predict the rating of a movie. It was completed in: ``rf_model.ipynb``
+
+### Support-vector machines (SVMs)
+Support-vector machines is a model that can predict the rating of a movie. It was completed in: ``svm_model.ipynb``
