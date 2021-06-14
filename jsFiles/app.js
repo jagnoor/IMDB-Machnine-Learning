@@ -5,20 +5,20 @@ function initialDashboard() {
         if (err) throw err;
 
         // console.log(data);
-        
+
         // Table start
         // Create the table
         var tbody = d3.select("tbody");
-        data.forEach(function(data) {
+        data.forEach(function (data) {
             var row = tbody.append("tr");
-        
+
             // Collect the key and value for each object
-            Object.entries(data).forEach(function([key, value]) {
+            Object.entries(data).forEach(function ([key, value]) {
                 // console.log(key, value);
-        
+
                 // Use d3 to append one cell per ufo data value
                 var cell = row.append("td");
-        
+
                 // Append a cell to the row for each value in ufo data object
                 cell.text(value);
             });
@@ -31,125 +31,60 @@ function initialDashboard() {
 }
 initialDashboard();
 
+// Select button and form from the HTML
+var form = d3.select("#form");
+var filter_button = d3.select("#filter-btn");
 
-    // function for filter search on data.html
-    // Code inspired from Riley Fritz (https://github.com/rileyfritz/javascript-challenge)
-function filter1Change(newYear) {
-    document.getElementById("tbody").innerHTML = '';
+// Create event handlers for clicking the filter button or pressing the enter key
+form.on("submit", runEnter);
+filter_button.on("click", runEnter);
 
-    d3.csv("../Resources/imdb_final.csv").then(data => {
+// function for filter search on data.html
+// Code inspired from Riley Fritz (https://github.com/rileyfritz/javascript-challenge)
+function runEnter() {
 
-        var yearFiltered = data.filter(obj => obj.year == newYear)
+    d3.event.preventDefault();
+
+    d3.csv("../Resources/imdb_final.csv").then(function (data, err) {
+        if (err) throw err;
+
+        document.getElementById("tbody").innerHTML = '';
+
         // Use D3 to select the forms
-        var yearForm = d3.select("#first-filter");
+        var yearForm = d3.select("#date");
         var yearInput = yearForm.property("value");
+        console.log(yearInput)
 
-        var genreForm = d3.select("#second-filter");
+        var genreForm = d3.select("#genre");
         var genreInput = genreForm.property("value");
-        
-        var directorForm = d3.select("#third-filter");
+        console.log(genreInput)
+
+        var directorForm = d3.select("#director");
         var directorInput = directorForm.property("value");
+        console.log(directorInput)
 
-        // console.log(nameFiltered);
+        var filteredData = data
+
+        if (yearInput) {
+            filteredData = filteredData.filter(data => data.year === yearInput)
+        }
+        if (genreInput) {
+            filteredData = filteredData.filter(data => data.genre === genreInput)
+        }
+        if (directorInput) {
+            filteredData = filteredData.filter(data => data.director === directorInput)
+        }
+
+        console.log(filteredData)
+
+        // Read data to table
         var tbody = d3.select("tbody");
-        yearFiltered.forEach(function(yearFiltered) {
+        filteredData.forEach(function (movie) {
             var row = tbody.append("tr");
-
-            // Collect the key and value for each object
-            Object.entries(yearFiltered).forEach(function([key, value]) {
-                // console.log(key, value);
-
-                // Use d3 to append one cell per ufo data value
+            Object.entries(movie).forEach(([key, value]) => {
                 var cell = row.append("td");
-
-                // Append a cell to the row for each value in ufo data object
                 cell.text(value);
-            });
-
-        });
-
-        // var input = document.getElementById("#datetime");
-        // var table = document.getElementById("tbody");
-        // var tr = table.getElementsByTagName("tr");
-
-        // for (i = 1; i < tr.length; i++) {
-        
-        //     console.log(tr[i]);
-        //     var tdYear = tr[i].getElementsByTagName("td")[0].innerText;
-        //     var tdGenre = tr[i].getElementsByTagName("td")[1].innerText;
-        //     var tdDirector = tr[i].getElementsByTagName("td")[2].innerText;
-                
-        //     if ((tdYear == yearInput || yearInput == "") && (tdGenre == genreInput || genreInput == "") && (tdDirector == directorInput || directorInput == "")) {
-        //         tr[i].style.display = "";
-        //         console.log("found")
-        //     }
-
-        //     else {
-        //         tr[i].style.display = "None";
-        //         console.log("not found")
-        //     }
-        // }
-    });
-
-
-
-}
-
-function filter2Change(newGenre) {
-    document.getElementById("tbody").innerHTML = '';
-
-    d3.csv("../Resources/imdb_final.csv").then(data => {
-
-        var yearFiltered = data.filter(obj => obj.year == newYear)
-        // Use D3 to select the forms
-        var yearForm = d3.select("#first-filter");
-        var yearInput = yearForm.property("value");
-
-        var genreForm = d3.select("#second-filter");
-        var genreInput = genreForm.property("value");
-        
-        var directorForm = d3.select("#third-filter");
-        var directorInput = directorForm.property("value");
-
-        // console.log(nameFiltered);
-        var tbody = d3.select("tbody");
-        yearFiltered.forEach(function(yearFiltered) {
-            var row = tbody.append("tr");
-
-            // Collect the key and value for each object
-            Object.entries(yearFiltered).forEach(function([key, value]) {
-                // console.log(key, value);
-
-                // Use d3 to append one cell per ufo data value
-                var cell = row.append("td");
-
-                // Append a cell to the row for each value in ufo data object
-                cell.text(value);
-            });
-
-        });
-
-        // var input = document.getElementById("#datetime");
-        // var table = document.getElementById("tbody");
-        // var tr = table.getElementsByTagName("tr");
-
-        // for (i = 1; i < tr.length; i++) {
-        
-        //     console.log(tr[i]);
-        //     var tdYear = tr[i].getElementsByTagName("td")[0].innerText;
-        //     var tdGenre = tr[i].getElementsByTagName("td")[1].innerText;
-        //     var tdDirector = tr[i].getElementsByTagName("td")[2].innerText;
-                
-        //     if ((tdYear == yearInput || yearInput == "") && (tdGenre == genreInput || genreInput == "") && (tdDirector == directorInput || directorInput == "")) {
-        //         tr[i].style.display = "";
-        //         console.log("found")
-        //     }
-
-        //     else {
-        //         tr[i].style.display = "None";
-        //         console.log("not found")
-        //     }
-        // }
-    });
-
-}
+            })
+        })
+    })
+};
