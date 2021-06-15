@@ -14,7 +14,9 @@ Link to Dataset: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/
 * Machine learning models using python and jupyter notebooks: multiple linear regression, deep learning, random forest, and support-vector machines.
 
 ## ETL
-``movie_cleaning.ipynb`` was used to complete ETL on ``IMDB_movies.csv`` and ``IMDB_ratings.csv`` to generate ``imdb_final.csv``. This final CSV is the basis for the data used in machine learning. These files are saved in ``Resources``.
+``movie_cleaning.ipynb`` was used to complete ETL on ``IMDB_movies.csv`` and ``IMDB_ratings.csv`` to generate ``imdb_final.csv``. This final CSV is the basis for the data used in machine learning. These files are saved in [Resources](Resources).
+
+Run [movie_cleaning.ipynb](movie_cleaning.ipynb)
 
 ## Data Visualization
 Tableau was used to explore and visualize the data. 
@@ -24,16 +26,16 @@ Tableau was used to explore and visualize the data.
 ### Preprocessing and scaling
 The data from ``imdb_final.csv`` needed to be preprocessed. First, the categorical columns genre and director were dummy encoded using pandas. Then, that data was reformmated using using label encoder from sklearn.preprocessing,scaled using standard scaler from sklearn.preprocessing, and then to categorical using tensorflow.keras.utils.
 
-### Multiple Linear Regression
-Multiple linear regression is not a feasible model for this data. It was attempted in the file: ``multiple_linear_regression.ipynb``
+### [Multiple Linear Regression](https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression)
+Multiple linear regression is not a feasible model for this data. It was attempted in the file: [multiple_linear_regression.ipynb](multiple_linear_regression.ipynb)
 
 ### Deep Learning
-Deep learning is a model that can predict the rating of a movie. It was completed in: ``deep_learning.ipynb``
+Deep learning is a model that can predict the rating of a movie. It was completed in: [deep_learning.ipynb](deep_learning.ipynb)
 
 ### Random Forest
-Random forest is a model that can predict the rating of a movie. It was completed in: ``rf_model.ipynb``
+Random forest is a model that can predict the rating of a movie. It was completed in: [rf_model.ipynb](rf_model.ipynb)
 
-### Support-vector machines (SVMs)
+### [Support-vector machines (SVMs)](https://jagnoor.github.io/IMBD-Machnine-Learning/pages/svm)
 Support-vector machines is a model that can predict the rating of a movie. It was completed in: [svm_model.ipynb](svm_model.ipynb)
 
 [View the results](https://jagnoor.github.io/IMBD-Machnine-Learning/)
