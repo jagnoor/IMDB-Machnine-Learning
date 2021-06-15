@@ -2,7 +2,7 @@
 
 Final Project for 2010 University of Minnesota  Data Analytics Bootcamp IMDb Machine Learning by Jon, Mallory, Habibe and Jag. This project is focused on designing models to predict IMDB movie ratings based on genre, year of release, budget, duration, and director.
 
-https://jagnoor.github.io/IMBD-Machnine-Learning/ 
+https://jagnoor.github.io/IMDB-Machnine-Learning/ 
 
 ## Method and Detail
 
@@ -28,7 +28,7 @@ Tableau was used to explore and visualize the data.
 ### Preprocessing and scaling
 The data from ``imdb_final.csv`` needed to be preprocessed. First, the categorical columns genre and director were dummy encoded using pandas. Then, that data was reformmated using using label encoder from sklearn.preprocessing,scaled using standard scaler from sklearn.preprocessing, and then to categorical using tensorflow.keras.utils.
 
-### [Multiple Linear Regression](https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression)
+### [Multiple Linear Regression](https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression)
 Multiple linear regression is not a feasible model for this data. It was attempted in the file: [multiple_linear_regression.ipynb](multiple_linear_regression.ipynb)
 
 ### Deep Learning
@@ -37,7 +37,7 @@ Deep learning is a model that can predict the rating of a movie. It was complete
 ### Random Forest
 Random forest is a model that can predict the rating of a movie. It was completed in: [rf_model.ipynb](rf_model.ipynb)
 
-### [Support-vector machines (SVMs)](https://jagnoor.github.io/IMBD-Machnine-Learning/pages/svm)
+### [Support-vector machines (SVMs)](https://jagnoor.github.io/IMDB-Machnine-Learning/pages/svm)
 Support-vector machines is a model that can predict the rating of a movie. It was completed in: [svm_model.ipynb](svm_model.ipynb)
 
-[View the results](https://jagnoor.github.io/IMBD-Machnine-Learning/)
+[View the results](https://jagnoor.github.io/IMDB-Machnine-Learning/)
