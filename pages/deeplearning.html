@@ -2,125 +2,150 @@
 <html lang="en-us">
 
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Deep Learning Findings</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Deep Learning Findings</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
-    <!-- Nav Bar Start-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
-      <a class="navbar-brand" href="https://jagnoor.github.io/IMBD-Machnine-Learning/">Home</a>
+  <!-- Nav Bar Start-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+    <a class="navbar-brand" href="https://jagnoor.github.io/IMBD-Machnine-Learning/">Home</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown btn-group">
-           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Project Findings
-            </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown btn-group">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Findings
+          </a>
 
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression">Regression Findings</a>
-              <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/svm">SVM Findings</a>
-              <a class="dropdown-item" href="">Page 3</a>
-              <a class="dropdown-item" href="">Page 4</a>
-              <a class="dropdown-item" href="">Page 5</a>
-              <a class="dropdown-item" href="">Page 6</a>
-            </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression">Regression
+              Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/svm">SVM Findings</a>
+            <a class="dropdown-item" href="">Page 3</a>
+            <a class="dropdown-item" href="">Page 4</a>
+            <a class="dropdown-item" href="">Page 5</a>
+            <a class="dropdown-item" href="">Page 6</a>
+          </div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/data">Data</a>
-            </li>
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Data Visualizations
-                </a>
+        <li class="nav-item">
+          <a class="nav-link" href="">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/data">Data</a>
+        </li>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Data Visualizations
+          </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="">Cool Visualization 1</a>
-                  <a class="dropdown-item" href="">Cool Visualization 2</a>
-                  <a class="dropdown-item" href="">Cool Visualization 3</a>
-                  <a class="dropdown-item" href="">Cool Visualization 4</a>
-                  <a class="dropdown-item" href="">Cool Visualization 5</a>
-                  <a class="dropdown-item" href="">Cool Visualization 6</a>
-                </div> 
-              </div>  
-            </li>  
-        </ul>
-      </div>
-  </nav>
-<!-- Nav Bar End -->
-
-
-    <!-- Background Image (IMDB Movies) 1st Row-->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;">
-        <!-- Translucent Box -->
-        <div class="transbox" id="firstTrans">
-            <!-- Text Start -->
-            <br>
-            <h1>SVM Findings</h1>
-            <br>
-            <h3>What is SVM?</h3>
-            <br>
-            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">Support-vector machines</a> (SVM) is a supervised machine learning algorithm useful to analyze
-             data by separating data points into categories using an optimal <a href="https://en.wikipedia.org/wiki/Hyperplane_separation_theorem">hyperplane</a> to ensure the largest margin of separation possible.</p>
-            <br>
-            <!-- SVM Graph Image -->
-            <img src="../images/svm2.png" class="img-responsive" id="SVM2" alt="SVM2 Image">
-            <br>
-            <h3>Why use an SVM?</h3>
-            <br>
-            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">SVM</a> can be used in <a href="https://en.wikipedia.org/wiki/Classification">classification</a> or 
-            <a href="https://en.wikipedia.org/wiki/Regression_analysis">regression</a> analysis. SVM models are popular for their<a href="https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python"> relatively high accuracy</a> compared to other classification models
-            such as <a href="https://en.wikipedia.org/wiki/Logistic_regression">logistic regression</a> and <a href="https://en.wikipedia.org/wiki/Decision_tree_learning">decision trees</a>.</p>
-            <br>
-            <h3><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Model Accuracy</a></h3>
-            <!-- SVM Result Image -->
-            <img src="../images/svm1.png" class="img-responsive" id="SVM1" alt="SVM1 Image">
-            <!-- Text -->
-            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision</a> tells us what percentage of the times the model predicted Bad, Good, or Excellent and was correct.
-            Our model was correct 57% of the time it predicted Bad, 46% of the time it predicted Good, and 72% of the time it predicted Excellent with the test data.</p>
-            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> tells us how many of the total of each class was correctly identified. Our model correctly identified 44% of the Bad movies, 46% of the Good movies, and 72%
-            of the Excellent movies in the test data.</p>
-            <p class="text-left"><a href="https://en.wikipedia.org/wiki/F-score">F1-score</a> measures the <a href="https://en.wikipedia.org/wiki/Harmonic_mean">harmonic mean</a> of precision and recall.
-            F1-Score ranges from 0 to 1 with 1 being the best result. Our F1-score model findings show this model is better at predicting Excellent movies than Good or Bad Movies.</p>
-            <p class="text-left"><a href="https://datascience.stackexchange.com/questions/15989/micro-average-vs-macro-average-performance-in-a-multiclass-classification-settin">Macro accuracy average</a> measures the classifications individually
-            then takes an average.</p> 
-            <p class="text-left"><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Weighted accuracy average</a> takes the fraction of correct predictions in each classification divided by the total number of instances in that class.</p>
-            <br>
-            
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="">Cool Visualization 1</a>
+            <a class="dropdown-item" href="">Cool Visualization 2</a>
+            <a class="dropdown-item" href="">Cool Visualization 3</a>
+            <a class="dropdown-item" href="">Cool Visualization 4</a>
+            <a class="dropdown-item" href="">Cool Visualization 5</a>
+            <a class="dropdown-item" href="">Cool Visualization 6</a>
+          </div>
         </div>
+        </li>
+      </ul>
     </div>
-    <!-- Background Image (IMDB Movies) 2nd Row -->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
-    <!-- Background Image (IMDB Movies) 3rd Row -->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
-    <!-- Background Image (IMDB Movies) 4th Row -->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
-    
-    
-    
+  </nav>
+  <!-- Nav Bar End -->
 
 
-    <!-- Imports -->
-    <!--  jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Background Image (IMDB Movies) 1st Row-->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;">
+    <!-- Translucent Box -->
+    <div class="transbox" id="firstTrans">
+      <!-- Text Start -->
+      <br>
+      <h1>SVM Findings</h1>
+      <br>
+      <h3>What is SVM?</h3>
+      <br>
+      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">Support-vector machines</a>
+        (SVM) is a supervised machine learning algorithm useful to analyze
+        data by separating data points into categories using an optimal <a
+          href="https://en.wikipedia.org/wiki/Hyperplane_separation_theorem">hyperplane</a> to ensure the largest margin
+        of separation possible.</p>
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/svm2.png" class="img-responsive" id="SVM2" alt="SVM2 Image">
+      <br>
+      <h3>Why use an SVM?</h3>
+      <br>
+      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">SVM</a> can be used in <a
+          href="https://en.wikipedia.org/wiki/Classification">classification</a> or
+        <a href="https://en.wikipedia.org/wiki/Regression_analysis">regression</a> analysis. SVM models are popular for
+        their<a href="https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python"> relatively
+          high accuracy</a> compared to other classification models
+        such as <a href="https://en.wikipedia.org/wiki/Logistic_regression">logistic regression</a> and <a
+          href="https://en.wikipedia.org/wiki/Decision_tree_learning">decision trees</a>.</p>
+      <br>
+      <h3><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Model Accuracy</a></h3>
+      <!-- SVM Result Image -->
+      <img src="../images/svm1.png" class="img-responsive" id="SVM1" alt="SVM1 Image">
+      <!-- Text -->
+      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision</a> tells us what
+        percentage of the times the model predicted Bad, Good, or Excellent and was correct.
+        Our model was correct 57% of the time it predicted Bad, 46% of the time it predicted Good, and 72% of the time
+        it predicted Excellent with the test data.</p>
+      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> tells us how many of
+        the total of each class was correctly identified. Our model correctly identified 44% of the Bad movies, 46% of
+        the Good movies, and 72%
+        of the Excellent movies in the test data.</p>
+      <p class="text-left"><a href="https://en.wikipedia.org/wiki/F-score">F1-score</a> measures the <a
+          href="https://en.wikipedia.org/wiki/Harmonic_mean">harmonic mean</a> of precision and recall.
+        F1-Score ranges from 0 to 1 with 1 being the best result. Our F1-score model findings show this model is better
+        at predicting Excellent movies than Good or Bad Movies.</p>
+      <p class="text-left"><a
+          href="https://datascience.stackexchange.com/questions/15989/micro-average-vs-macro-average-performance-in-a-multiclass-classification-settin">Macro
+          accuracy average</a> measures the classifications individually
+        then takes an average.</p>
+      <p class="text-left"><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Weighted
+          accuracy average</a> takes the fraction of correct predictions in each classification divided by the total
+        number of instances in that class.</p>
+      <br>
+
+    </div>
+  </div>
+  <!-- Background Image (IMDB Movies) 2nd Row -->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+  <!-- Background Image (IMDB Movies) 3rd Row -->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+  <!-- Background Image (IMDB Movies) 4th Row -->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+
+
+
+
+
+  <!-- Imports -->
+  <!--  jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Forest Findings</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <!-- Nav Bar Start-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="https://jagnoor.github.io/IMBD-Machnine-Learning/">Home</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown btn-group">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Project Findings
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"
+                            href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/Regression">Regression
+                            Findings</a>
+                        <a class="dropdown-item" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/svm">SVM
+                            Findings</a>
+                        <a class="dropdown-item" href="">Page 3</a>
+                        <a class="dropdown-item" href="">Page 4</a>
+                        <a class="dropdown-item" href="">Page 5</a>
+                        <a class="dropdown-item" href="">Page 6</a>
+                    </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://jagnoor.github.io/IMBD-Machnine-Learning/pages/data">Data</a>
+                </li>
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data Visualizations
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="">Cool Visualization 1</a>
+                        <a class="dropdown-item" href="">Cool Visualization 2</a>
+                        <a class="dropdown-item" href="">Cool Visualization 3</a>
+                        <a class="dropdown-item" href="">Cool Visualization 4</a>
+                        <a class="dropdown-item" href="">Cool Visualization 5</a>
+                        <a class="dropdown-item" href="">Cool Visualization 6</a>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+
+    <!-- Background Image (IMDB Movies) 1st Row-->
+    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;">
+        <!-- Translucent Box -->
+        <div class="transbox" id="firstTrans">
+            <!-- Text Start -->
+            <br>
+            <h1>Random Forest Findings</h1>
+            <br>
+            <h3>What is Random Forest?</h3>
+            <br>
+            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">Random forests </a> or
+                random decision forests is a technique used in modeling predictions and behavior analysis
+                and is built on decision trees. It contains many decision trees that represent a distinct instance of
+                the classification of data input into the random forest. The random forest technique takes consideration
+                of the instances individually, taking the one with the majority of votes as the selected prediction.</p>
+
+            <p class="=" text-left">Each tree in the classifications takes input from samples in the initial dataset.
+                Features are then randomly selected, which are used in growing the tree at each node. Every tree in the
+                forest should not be pruned until the end of the exercise, when the prediction is reached decisively. In
+                such a way, the random forest enables any classifiers with weak correlations to create a strong
+                classifier.
+
+            </p>
+            <br>
+            <!-- SVM Graph Image -->
+            <img src="../images/randomforest.png" class="img-responsive" id="SVM2" alt="SVM2 Image">
+            <br>
+            <h3>Advantages of Random Forests</h3>
+            <br>
+            <p class="text-left">Random forests present estimates for variable importance, i.e., neural nets. They also
+                offer a superior method for working with missing data. Missing values are substituted by the variable
+                appearing the most in a particular node. Among all the available classification methods, random forests
+                provide the highest accuracy.
+
+                The random forest technique can also handle big data with numerous variables running into thousands. It
+                can automatically balance data sets when a class is more infrequent than other classes in the data. The
+                method also handles variables fast, making it suitable for complicated tasks..</p>
+            <br>
+            <h3>Disadvantages of Random Forests</h3>
+            <br>
+
+            <p class="text-left"> While random forests often achieve higher accuracy than a single decision tree, they
+                sacrifice the intrinsic interpretability present in decision trees. Decision trees are among a fairly
+                small family of machine learning models that are easily interpretable along with linear models,
+                rule-based models, and attention-based models. This interpretability is one of the most desirable
+                qualities of decision trees. It allows developers to confirm that the model has learned realistic
+                information from the data and allows end-users to have trust and confidence in the decisions made by the
+                model. For example, following the path that a decision tree takes to make its decision is quite trivial,
+                but following the paths of tens or hundreds of trees is much harder. To achieve both performance and
+                interpretability, some model compression techniques allow transforming a random forest into a minimal
+                "born-again" decision tree that faithfully reproduces the same decision function. If it is established
+                that the predictive attributes are linearly correlated with the target variable, using random forest may
+                not enhance the accuracy of the base learner. Furthermore, in problems with multiple categorical
+                variables, random forest may not be able to increase the accuracy of the base learner</p>
+
+            <br>
+            <h3><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Model Accuracy</a>
+            </h3>
+            <br>
+            <p class="text-left">In the case of IMBD data Random forest had the highest accuracy score of all models at
+                71% </p>
+            <!-- SVM Result Image -->
+            <img src="../images/Rfscore1.PNG" class="img-responsive" id="SVM1" alt="SVM1 Image">
+            <!-- Text -->
+            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision</a> tells us
+                what percentage of the times the model predicted Bad, Good, or Excellent and was correct.
+                Our model was correct 64% of the time it predicted Bad, 73% of the time it predicted Good, and 50% of
+                the time it predicted Excellent with the test data.</p>
+            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> tells us how
+                many of the total of each class was correctly identified. Our model correctly identified 50% of the Bad
+                movies, 90% of the Good movies, and 9% of the Excellent movies in the test data.</p>
+            <p class="text-left"><a href="https://en.wikipedia.org/wiki/F-score">F1-score</a> measures the <a
+                    href="https://en.wikipedia.org/wiki/Harmonic_mean">harmonic mean</a> of precision and recall.
+                F1-Score ranges from 0 to 1 with 1 being the best result. Our F1-score model findings show this model is
+                better at predicting Good movies than Excellent or Bad Movies.</p>
+            <p class="text-left"><a
+                    href="https://datascience.stackexchange.com/questions/15989/micro-average-vs-macro-average-performance-in-a-multiclass-classification-settin">Macro
+                    accuracy average</a> measures the classifications individually
+                then takes an average.</p>
+            <p class="text-left"><a
+                    href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Weighted accuracy
+                    average</a> takes the fraction of correct predictions in each classification divided by the total
+                number of instances in that class.</p>
+            <br>
+
+        </div>
+    </div>
+    <!-- Background Image (IMDB Movies) 2nd Row -->
+    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+    <!-- Background Image (IMDB Movies) 3rd Row -->
+    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+    <!-- Background Image (IMDB Movies) 4th Row -->
+    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+
+
+
+
+
+    <!-- Imports -->
+    <!--  jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
