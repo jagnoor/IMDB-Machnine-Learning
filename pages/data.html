@@ -2,151 +2,161 @@
 <html lang="en-us">
 
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Data Table</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Table</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../static/data.css">
 </head>
 
 <body>
-    <!-- Nav Bar Start-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
-      <a class="navbar-brand" href="https://jagnoor.github.io/IMDB-Machnine-Learning/">Home</a>
+  <!-- Nav Bar Start-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+    <a class="navbar-brand" href="https://jagnoor.github.io/IMDB-Machnine-Learning/">Home</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown btn-group">
-           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Project Findings
-            </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown btn-group">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Findings
+          </a>
 
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression">Regression Findings</a>
-              <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/svm">SVM Findings</a>
-              <a class="dropdown-item" href="">Page 3</a>
-              <a class="dropdown-item" href="">Page 4</a>
-              <a class="dropdown-item" href="">Page 5</a>
-              <a class="dropdown-item" href="">Page 6</a>
-            </div>
-
-            <li class="nav-item">
-              <a class="nav-link" href="">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/data">Data</a>
-            </li>
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Data Visualizations
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="">Cool Visualization 1</a>
-                  <a class="dropdown-item" href="">Cool Visualization 2</a>
-                  <a class="dropdown-item" href="">Cool Visualization 3</a>
-                  <a class="dropdown-item" href="">Cool Visualization 4</a>
-                  <a class="dropdown-item" href="">Cool Visualization 5</a>
-                  <a class="dropdown-item" href="">Cool Visualization 6</a>
-                </div> 
-              </div>  
-            </li>  
-        </ul>
-      </div>
-  </nav>
-<!-- Nav Bar End -->
-
- 
-      <div class="col-xs-12">
-        <aside class="filters">
-          <div class="panel panel-default">
-            <div class="panel-heading">Filter Search</div>
-            <div class="panel-body row">
-              <form id="form">
-                <div class="form-group">
-                  <ul class="list-group" id="filters">
-                    <div class="col-xs-3">
-                      <li class="filter list-group-item" id="formOne">
-                        <label for="date">Year</label>
-                        <input class="form-control" id="date" type="text" placeholder="Enter Year between 2000-2019">
-                        <label for="genre">Genre</label>
-                        <input class="form-control" id="genre" type="text" placeholder="Enter Genre">
-                        <label for="director">Director</label>
-                        <input class="form-control" id="director" type="text" placeholder="Enter Director">
-                      </li>
-                    </div>
-                  </ul>
-                </div>
-                <div class="col-sm-2">
-                  <button id="filter-btn" type="button" class="btn btn-secondary btn-sm">Filter Table</button>
-                  <button type="button" class="btn btn-secondary btn-sm" onclick="location.reload()"><span>Reset</span></button>
-                </div>
-              </form>
-            </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression">Regression
+              Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/svm">SVM Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/rf">Random Forest
+              Findings</a>
+            <a class="dropdown-item" href="">Page 4</a>
+            <a class="dropdown-item" href="">Page 5</a>
+            <a class="dropdown-item" href="">Page 6</a>
           </div>
-        </aside>
-      </div>
-   
-      <div class="col-sm-12">
-        <div id="table-area" class="">
-          <table id="imdb-table" class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th class="table-head">Title ID</th>
-                <th class="table-head">Title</th>
-                <th class="table-head">Year</th>
-                <th class="table-head">Genre</th>
-                <th class="table-head">Duration</th>
-                <th class="table-head">Country</th>
-                <th class="table-head">Director</th>
-                <th class="table-head">Production Company</th>
-                <th class="table-head">Budget</th>
-                <th class="table-head">Total Votes</th>
-                <th class="table-head">Median Vote</th>
-                <th class="table-head">All 18-29</th>
-                <th class="table-head">All 30-44</th>
-                <th class="table-head">All >45</th>
-                <th class="table-head">Males</th>
-                <th class="table-head">Males 18-29</th>
-                <th class="table-head">Males 30-44</th>
-                <th class="table-head">Males >45</th>
-                <th class="table-head">Females</th>
-                <th class="table-head">Females 18-29</th>
-                <th class="table-head">Females 30-44</th>
-                <th class="table-head">Females >45</th>
-                <th class="table-head">Rating Class</th>
-              </tr>
-            </thead>
-            <tbody id="tbody"></tbody>
-          </table>
+
+        <li class="nav-item">
+          <a class="nav-link" href="">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/data">Data</a>
+        </li>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Data Visualizations
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="">Cool Visualization 1</a>
+            <a class="dropdown-item" href="">Cool Visualization 2</a>
+            <a class="dropdown-item" href="">Cool Visualization 3</a>
+            <a class="dropdown-item" href="">Cool Visualization 4</a>
+            <a class="dropdown-item" href="">Cool Visualization 5</a>
+            <a class="dropdown-item" href="">Cool Visualization 6</a>
+          </div>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Nav Bar End -->
+
+
+  <div class="col-xs-12">
+    <aside class="filters">
+      <div class="panel panel-default">
+        <div class="panel-heading">Filter Search</div>
+        <div class="panel-body row">
+          <form id="form">
+            <div class="form-group">
+              <ul class="list-group" id="filters">
+                <div class="col-xs-3">
+                  <li class="filter list-group-item" id="formOne">
+                    <label for="date">Year</label>
+                    <input class="form-control" id="date" type="text" placeholder="Enter Year between 2000-2019">
+                    <label for="genre">Genre</label>
+                    <input class="form-control" id="genre" type="text" placeholder="Enter Genre">
+                    <label for="director">Director</label>
+                    <input class="form-control" id="director" type="text" placeholder="Enter Director">
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <button id="filter-btn" type="button" class="btn btn-secondary btn-sm">Filter Table</button>
+              <button type="button" class="btn btn-secondary btn-sm"
+                onclick="location.reload()"><span>Reset</span></button>
+            </div>
+          </form>
         </div>
       </div>
-    
-    
-    
+    </aside>
+  </div>
+
+  <div class="col-sm-12">
+    <div id="table-area" class="">
+      <table id="imdb-table" class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th class="table-head">Title ID</th>
+            <th class="table-head">Title</th>
+            <th class="table-head">Year</th>
+            <th class="table-head">Genre</th>
+            <th class="table-head">Duration</th>
+            <th class="table-head">Country</th>
+            <th class="table-head">Director</th>
+            <th class="table-head">Production Company</th>
+            <th class="table-head">Budget</th>
+            <th class="table-head">Total Votes</th>
+            <th class="table-head">Median Vote</th>
+            <th class="table-head">All 18-29</th>
+            <th class="table-head">All 30-44</th>
+            <th class="table-head">All >45</th>
+            <th class="table-head">Males</th>
+            <th class="table-head">Males 18-29</th>
+            <th class="table-head">Males 30-44</th>
+            <th class="table-head">Males >45</th>
+            <th class="table-head">Females</th>
+            <th class="table-head">Females 18-29</th>
+            <th class="table-head">Females 30-44</th>
+            <th class="table-head">Females >45</th>
+            <th class="table-head">Rating Class</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
 
 
-    <!-- Imports -->
 
-    <!--  jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- D3 JS-->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <!-- js file -->
-    <script src="../jsFiles/app.js"></script>
 
-    
+
+  <!-- Imports -->
+
+  <!--  jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- D3 JS-->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- js file -->
+  <script src="../jsFiles/app.js"></script>
+
+
 </body>
 
 </html>

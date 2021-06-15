@@ -2,108 +2,123 @@
 <html lang="en-us">
 
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Regression Findings</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Regression Findings</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- CSS -->
   <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
-    <!-- Nav Bar Start-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
-      <a class="navbar-brand" href="https://jagnoor.github.io/IMDB-Machnine-Learning/">Home</a>
+  <!-- Nav Bar Start-->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-custom">
+    <a class="navbar-brand" href="https://jagnoor.github.io/IMDB-Machnine-Learning/">Home</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown btn-group">
-           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Project Findings
-            </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown btn-group">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Findings
+          </a>
 
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression">Regression Findings</a>
-              <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/svm">SVM Findings</a>
-              <a class="dropdown-item" href="">Page 3</a>
-              <a class="dropdown-item" href="">Page 4</a>
-              <a class="dropdown-item" href="">Page 5</a>
-              <a class="dropdown-item" href="">Page 6</a>
-            </div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression">Regression
+              Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/svm">SVM Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/rf">Random Forest
+              Findings</a>
+            <a class="dropdown-item" href="">Page 4</a>
+            <a class="dropdown-item" href="">Page 5</a>
+            <a class="dropdown-item" href="">Page 6</a>
+          </div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/data">Data</a>
-            </li>
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Data Visualizations
-                </a>
+        <li class="nav-item">
+          <a class="nav-link" href="">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/data">Data</a>
+        </li>
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Data Visualizations
+          </a>
 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="">Cool Visualization 1</a>
-                  <a class="dropdown-item" href="">Cool Visualization 2</a>
-                  <a class="dropdown-item" href="">Cool Visualization 3</a>
-                  <a class="dropdown-item" href="">Cool Visualization 4</a>
-                  <a class="dropdown-item" href="">Cool Visualization 5</a>
-                  <a class="dropdown-item" href="">Cool Visualization 6</a>
-                </div> 
-              </div>  
-            </li>  
-        </ul>
-      </div>
-  </nav>
-<!-- Nav Bar End -->
-
-
-    <!-- Background Image (IMDB Movies) 1st Row-->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;">
-        <!-- Translucent Box -->
-        <div class="transbox" id="firstTrans">
-            <br>
-            <h1>Regression Findings</h1>
-            <h3>What is Multiple Linear Regression?</h3>
-            <br>
-            <p class="text-left"><a href="https://en.wikipedia.org/wiki/Linear_regression#Simple_and_multiple_linear_regression">Multiple Linear Regression</a> is allows an analyst to describe the relationship between multiple independent variables to predict a dependent variable (movie ratings).</p>
-            <br>
-            <!-- Sample Regression Image -->
-            <img src="../images/mRegressionSample.jpg" class="img-responsive" alt="Sample Image">
-            <!-- Sample Text -->
-            <br>
-            <h3>Why use Multiple Linear Regression?</h3>
-            <p class="text-left">Multiple linear regression is best used when there is a strong relationship between two or more indepentent variables and one dependent variable. It is best used with numerical data.</p>
-            <br>
-            <h3>Model Accuracy</h3>
-            <!-- Regression Image -->
-            <img src="../images/multipleLinearRegressionImage.png" class="img-responsive" alt="Regression Model Results">
-            <p class="text-left"></p>
-            <br>
-            <p class="text-left">Due to the number of variables being preprocessed to become numerical from categorical as well as that the goal of this modeling is to categorize the data into ratings, the Multiple Linear Regression was not usable.</p>
-            <br>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="">Cool Visualization 1</a>
+            <a class="dropdown-item" href="">Cool Visualization 2</a>
+            <a class="dropdown-item" href="">Cool Visualization 3</a>
+            <a class="dropdown-item" href="">Cool Visualization 4</a>
+            <a class="dropdown-item" href="">Cool Visualization 5</a>
+            <a class="dropdown-item" href="">Cool Visualization 6</a>
+          </div>
         </div>
+        </li>
+      </ul>
     </div>
-    <!-- Background Image (IMDB Movies) 2nd Row -->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
-    <!-- Background Image (IMDB Movies) 3rd Row -->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
-    <!-- Background Image (IMDB Movies) 4th Row -->
-    <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
-     
-    <!-- Imports -->
-    <!--  jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </nav>
+  <!-- Nav Bar End -->
+
+
+  <!-- Background Image (IMDB Movies) 1st Row-->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;">
+    <!-- Translucent Box -->
+    <div class="transbox" id="firstTrans">
+      <br>
+      <h1>Regression Findings</h1>
+      <h3>What is Multiple Linear Regression?</h3>
+      <br>
+      <p class="text-left"><a
+          href="https://en.wikipedia.org/wiki/Linear_regression#Simple_and_multiple_linear_regression">Multiple Linear
+          Regression</a> is allows an analyst to describe the relationship between multiple independent variables to
+        predict a dependent variable (movie ratings).</p>
+      <br>
+      <!-- Sample Regression Image -->
+      <img src="../images/mRegressionSample.jpg" class="img-responsive" alt="Sample Image">
+      <!-- Sample Text -->
+      <br>
+      <h3>Why use Multiple Linear Regression?</h3>
+      <p class="text-left">Multiple linear regression is best used when there is a strong relationship between two or
+        more indepentent variables and one dependent variable. It is best used with numerical data.</p>
+      <br>
+      <h3>Model Accuracy</h3>
+      <!-- Regression Image -->
+      <img src="../images/multipleLinearRegressionImage.png" class="img-responsive" alt="Regression Model Results">
+      <p class="text-left"></p>
+      <br>
+      <p class="text-left">Due to the number of variables being preprocessed to become numerical from categorical as
+        well as that the goal of this modeling is to categorize the data into ratings, the Multiple Linear Regression
+        was not usable.</p>
+      <br>
+    </div>
+  </div>
+  <!-- Background Image (IMDB Movies) 2nd Row -->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+  <!-- Background Image (IMDB Movies) 3rd Row -->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+  <!-- Background Image (IMDB Movies) 4th Row -->
+  <div class="parallax" style="background-image: url('../images/movies.jpg'); height: 100vh;"></div>
+
+  <!-- Imports -->
+  <!--  jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
