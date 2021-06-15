@@ -34,4 +34,6 @@ Deep learning is a model that can predict the rating of a movie. It was complete
 Random forest is a model that can predict the rating of a movie. It was completed in: ``rf_model.ipynb``
 
 ### Support-vector machines (SVMs)
-Support-vector machines is a model that can predict the rating of a movie. It was completed in: ``svm_model.ipynb``
+Support-vector machines is a model that can predict the rating of a movie. It was completed in: [svm_model.ipynb](svm_model.ipynb)
+
+[View the results](https://jagnoor.github.io/IMBD-Machnine-Learning/)
