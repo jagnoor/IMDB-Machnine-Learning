@@ -57,6 +57,7 @@ function runEnter() {
 
         var genreForm = d3.select("#genre");
         var genreInput = genreForm.property("value");
+        var genreInput = genreInput.toLowerCase();
         console.log(genreInput)
 
         var directorForm = d3.select("#director");
@@ -64,15 +65,16 @@ function runEnter() {
         console.log(directorInput)
 
         var filteredData = data
+        const regexp = new RegExp(directorInput, 'i');
 
         if (yearInput) {
             filteredData = filteredData.filter(data => data.year === yearInput)
         }
         if (genreInput) {
-            filteredData = filteredData.filter(data => data.genre === genreInput)
+            filteredData = filteredData.filter(data => data.genre.toLowerCase() === genreInput)
         }
         if (directorInput) {
-            filteredData = filteredData.filter(data => data.director === directorInput)
+            filteredData = filteredData.filter(data => data.director.toLowerCase().includes(directorInput.toLowerCase()))
         }
 
         console.log(filteredData)
