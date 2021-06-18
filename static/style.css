@@ -93,7 +93,11 @@ label {
 tableauPlaceholder { 
     margin-top: 5%;
     margin-bottom: 7%;
+}
 
-
-    
+#comparisonImage {
+    margin-top: 0%;
+    margin-bottom: 3%;
+    width: 85%;
+    height: 85%;
 }
