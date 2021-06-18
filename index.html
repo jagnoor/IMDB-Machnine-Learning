@@ -49,7 +49,7 @@
           <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/tableau">Data
             Visualizations</a>
         </li>
-        </li>
+        
       </ul>
     </div>
   </nav>
@@ -73,8 +73,7 @@
         budget? These are all inputs used in four models to predict movie ratings in the IMDb.</p>
       <br>
       <h3>IMDb Methodology</h3>
-      <p class="text-left">Data for IMDb was pulled from <a
-          href="https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/">Kaggle</a>. ETL was performed to clean
+      <p class="text-left">Data for IMDb was pulled from <a href="https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset/">Kaggle</a>. ETL was performed to clean
         the data. Removed movies that were missing information.
         Filtered for movies only from the United States. Removed movies that were older than 2000. In addition, the
         removal of commas and dollar signs was needed for the data to be usable in the models.</p>
@@ -88,15 +87,15 @@
       <p>Bad movies have a rating of 4 or less</p>
       <br>
       <h3>Machine Learning Models</h3>
-      <p class="text-left">Multiple models were used to find which model would generate the most accurate prediction.
-      </p>
+      <p class="text-left">Multiple models were used to find which model would generate the most accurate prediction.</p>
+      
       <p>Independent Variables: year, genre, duration, director, budget</p>
       <p>Dependent Variable: rating</p>
       <br>
 
       <br>
       <!-- SVM Graph Image -->
-      <img src="./images/indexcompare.png" alt="SVM2 Image">
+      <img src="./images/indexcompare.png" class="img-responsive" alt="SVM2 Image">
       <br>
 
       <br>
@@ -146,11 +145,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <!-- D3 JS-->
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <!-- js file -->
-  <script src="./jsFiles/app.js"></script>
-
+  
 
 </body>
 
