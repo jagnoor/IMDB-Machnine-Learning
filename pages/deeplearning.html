@@ -34,16 +34,20 @@
           </a>
 
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression">Regression Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/Regression">Regression
+              Findings</a>
             <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/svm">SVM Findings</a>
-            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/rf">Random Forest Findings</a>
-            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/deeplearning">Deep Learning Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/rf">Random Forest
+              Findings</a>
+            <a class="dropdown-item" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/deeplearning">Deep
+              Learning Findings</a>
           </div>
         <li class="nav-item">
           <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/data">Data</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/tableau">Data Visualizations</a>
+          <a class="nav-link" href="https://jagnoor.github.io/IMDB-Machnine-Learning/pages/tableau">Data
+            Visualizations</a>
         </li>
         </li>
       </ul>
@@ -58,52 +62,87 @@
     <div class="transbox" id="firstTrans">
       <!-- Text Start -->
       <br>
-      <h1>SVM Findings</h1>
+      <h1>Deep Learning Findings</h1>
       <br>
-      <h3>What is SVM?</h3>
+      <h3>What is deep learning or deep structured learning?</h3>
       <br>
-      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">Support-vector machines</a>
-        (SVM) is a supervised machine learning algorithm useful to analyze
-        data by separating data points into categories using an optimal <a
-          href="https://en.wikipedia.org/wiki/Hyperplane_separation_theorem">hyperplane</a> to ensure the largest margin
-        of separation possible.</p>
+      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Deep_learning">Deep Learning </a> or
+        deep structured learning s part of a broader family of machine learning methods based on artificial neural
+        networks with representation learning. Learning can be supervised, semi-supervised or unsupervised.</p>
+
+      <p class="text-left">Put simply, deep learning is a subset of machine learning which teaches machines to do what
+        humans are naturally born with: learn by example. Though the technology is often considered a set of algorithms
+        which ‘mimics the brain’, a more appropriate description would be a set of algorithms which ‘learns in layers’.
+        It involves learning through layers that enable a computer to develop a hierarchy of complicated concepts from
+        simpler concepts </p>
+
       <br>
       <!-- SVM Graph Image -->
-      <img src="../images/svm2.png" class="img-responsive" id="SVM2" alt="SVM2 Image">
+      <img src="../images/DL.jpeg" class="img-responsive" alt="SVM2 Image">
       <br>
-      <h3>Why use an SVM?</h3>
+
+      <p class="text-left">
+        Majority of the deep learning methods utilize neural network architectures and that’s why deep learning models
+        are widely known as deep neural networks as well. A deep learning process consists of two key phases — training
+        and inferring. The training phase can be considered as a process of labeling huge amounts of data and
+        identifying their matching characteristics. Here, the system compares those characteristics and memorizes them
+        to come up with correct conclusions when it encounters similar data next time. During the inferring phase, the
+        model makes conclusions and labels unexposed data with the help of the knowledge it gained previously.
+
+      </p>
+
+
       <br>
-      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Support-vector_machine">SVM</a> can be used in <a
-          href="https://en.wikipedia.org/wiki/Classification">classification</a> or
-        <a href="https://en.wikipedia.org/wiki/Regression_analysis">regression</a> analysis. SVM models are popular for
-        their<a href="https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python"> relatively
-          high accuracy</a> compared to other classification models
-        such as <a href="https://en.wikipedia.org/wiki/Logistic_regression">logistic regression</a> and <a
-          href="https://en.wikipedia.org/wiki/Decision_tree_learning">decision trees</a>.</p>
+      <h3>Our Deep Learning Model </h3>
       <br>
-      <h3><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Model Accuracy</a></h3>
-      <!-- SVM Result Image -->
-      <img src="../images/svm1.png" class="img-responsive" id="SVM1" alt="SVM1 Image">
-      <!-- Text -->
-      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Precision</a> tells us what
-        percentage of the times the model predicted Bad, Good, or Excellent and was correct.
-        Our model was correct 57% of the time it predicted Bad, 46% of the time it predicted Good, and 72% of the time
-        it predicted Excellent with the test data.</p>
-      <p class="text-left"><a href="https://en.wikipedia.org/wiki/Precision_and_recall">Recall</a> tells us how many of
-        the total of each class was correctly identified. Our model correctly identified 44% of the Bad movies, 46% of
-        the Good movies, and 72%
-        of the Excellent movies in the test data.</p>
-      <p class="text-left"><a href="https://en.wikipedia.org/wiki/F-score">F1-score</a> measures the <a
-          href="https://en.wikipedia.org/wiki/Harmonic_mean">harmonic mean</a> of precision and recall.
-        F1-Score ranges from 0 to 1 with 1 being the best result. Our F1-score model findings show this model is better
-        at predicting Excellent movies than Good or Bad Movies.</p>
-      <p class="text-left"><a
-          href="https://datascience.stackexchange.com/questions/15989/micro-average-vs-macro-average-performance-in-a-multiclass-classification-settin">Macro
-          accuracy average</a> measures the classifications individually
-        then takes an average.</p>
-      <p class="text-left"><a href="https://towardsdatascience.com/choosing-performance-metrics-61b40819eae1">Weighted
-          accuracy average</a> takes the fraction of correct predictions in each classification divided by the total
-        number of instances in that class.</p>
+
+      <p class="text-left"> Our deep learning model we used sklearn LabelEncoder to encode our categorical data (genre
+        and director). We created the test train split (default 75/25) and scaled our data using the standard scaler. We
+        used to_categorical to encode our target (rating class). Our model included 2 hidden layers with 100 nodes each.
+        The accuracy on this model was 66% - 68%.</p>
+
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/DL3.png" alt="SVM2 Image">
+      <br>
+
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/DL33.png" alt="SVM2 Image">
+      <br>
+
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/DL4.png" alt="SVM2 Image">
+      <br>
+
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/DL44.png" alt="SVM2 Image">
+      <br>
+
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/DL5.png" alt="SVM2 Image">
+      <br>
+
+      <br>
+      <!-- SVM Graph Image -->
+      <img src="../images/DL55.png" alt="SVM2 Image">
+      <br>
+
+      <h3>Advantages of Deep Learning</h3>
+      <br>
+      <p class="text-left"> One of deep learning’s main advantages over other machine learning algorithms is its
+        capacity to execute feature engineering on it own. A deep learning algorithm will scan the data to search for
+        features that correlate and combine them to enable faster learning without being explicitly told to do so.
+        Deep learning algorithms can be trained using different data formats, and still derive insights that are
+        relevant to the purpose of its training. For example, a deep learning algorithm can uncover any existing
+        relations between pictures, social media chatter, industry analysis, weather forecast and more to predict future
+        stock prices of a given company.
+
+      </p>
+
       <br>
 
     </div>
