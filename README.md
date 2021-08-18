@@ -41,3 +41,32 @@ Random forest is a model that can predict the rating of a movie. It was complete
 Support-vector machines is a model that can predict the rating of a movie. It was completed in: [svm_model.ipynb](svm_model.ipynb)
 
 [View the results](https://jagnoor.github.io/IMDB-Machnine-Learning/)
+
+## Website Preview
+![homepage](images/Screenshot1.png)
+#
+![Regression Findings](images/Screenshot2.png)
+#
+![SVM Findings](images/Screenshot3.png)
+#
+![Random Forest Findings](images/Screenshot4.png)
+#
+![Deep Learning Findings](images/Screenshot5.png)
+#
+![Data](images/Screenshot6.png)
+#
+![Summary](images/Screenshot7.png)
+#
+![Budget](images/Screenshot8.png)
+#
+![Budget Bins](images/Screenshot9.png)
+#
+![Budget By Rate Class](images/Screenshot10.png)
+#
+![Budget>100 M & Votes>100k Rating](images/Screenshot11.png)
+#
+![Director & Company](images/Screenshot12.png)
+#
+![Duration Minute](images/Screenshot13.png)
+#
+![Team Members](images/Screenshot14.png)
